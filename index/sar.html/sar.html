@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Boutique</title>
+    <link rel="stylesheet" href="sar.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <h1>Pet Boutique</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="sar.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Accesorios y mas</a>
+                    <ul class="dropdown-content">
+                        <li><a href="sar.html#collar">Collares</a></li>
+                        <li><a href="sar.html#cama">Camas</a></li>
+                        <li><a href="sar.html#juguete">Juguetes</a></li>
+                        <li><a href="ofertas.html">Ofertas Especiales</a></li>
+                        <li><a href="guia.html">Guia de tallas</a></li>
+                        <li><a href="medidas.html">formulario de medidas</a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="main-banner">
+        <div class="carousel">
+            <div class="carousel-images">
+             
+                <img src="https://mejorconsalud.as.com/wp-content/uploads/2021/11/juguete-perro.jpg" alt="Imagen 2" class="carousel-image">
+            </div>
+        </div>
+        <div class="welcome-text">
+            <h2>Bienvenidos a Pet Boutique</h2>
+            <p>Encuentra accesorios modernos para tu amigo peludo</p>
+            <button class="cta-button"><a href="#ofertas">Comprar Ahora</a></button>
+        </div>
+    </section>
+    
+    
+
+    <section id="collar" class="section">
+        <h3>Collares</h3>
+        <div class="grid">
+            <div class="item">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/715IUmaSTcL._AC_SL1500_.jpg" alt="Collar para perro" class="image-hover">
+                <p>Collar Ajustable</p>
+                <button onclick="openModal('Collar Ajustable', 'Descripción del collar ajustable', 'https://images-na.ssl-images-amazon.com/images/I/715IUmaSTcL._AC_SL1500_.jpg')">Comprar ahora</button>
+            </div>
+            <div class="item">
+                <img src="https://th.bing.com/th/id/OIP.hToVm_5-5089RNcbim9QNgHaHa?rs=1&pid=ImgDetMain" alt="Collar Personalizado" class="image-hover">
+                <p>Collar Personalizado</p>
+                <button onclick="openModal('Collar Personalizado', 'Descripción del collar personalizado', 'https://th.bing.com/th/id/OIP.hToVm_5-5089RNcbim9QNgHaHa?rs=1&pid=ImgDetMain')">Comprar ahora</button>
+            </div>
+            <div class="item">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/713X3nNWYLL._AC_SL1500_.jpg" alt="Juguete para perro" class="image-hover">
+                <p>Collar Clásico</p>
+                <button onclick="openModal('Collar Clásico', 'Descripción del collar clásico', 'https://images-na.ssl-images-amazon.com/images/I/713X3nNWYLL._AC_SL1500_.jpg')">Comprar ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cama" class="section">
+        <h3>Camas</h3>
+        <div class="grid">
+            <div class="item">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/81ZFlW1cpKL._AC_SL1500_.jpg" alt="Cama Clasica" class="image-hover">
+                <p>Cama Clásica</p>
+                <button onclick="openModal('Cama Clásica', 'Descripción de la cama clásica', 'https://images-na.ssl-images-amazon.com/images/I/81ZFlW1cpKL._AC_SL1500_.jpg')">Comprar ahora</button>
+            </div>
+            <div class="item">
+                <img src="https://th.bing.com/th/id/OIP.76qh25kSCuUX35ctjdQMngAAAA?rs=1&pid=ImgDetMain" alt="Cama Minimalista" class="image-hover">
+                <p>Cama Minimalista</p>
+                <button onclick="openModal('Cama Minimalista', 'Descripción de la cama minimalista', 'https://th.bing.com/th/id/OIP.76qh25kSCuUX35ctjdQMngAAAA?rs=1&pid=ImgDetMain')">Comprar ahora</button>
+            </div>
+            <div class="item">
+                <img src="https://www.petmoneysaver.co.uk/blog/wp-content/uploads/Vanilla-Cat-Bed1-300x228.jpg" alt="Cama Deluxe" class="image-hover">
+                <p>Cama Deluxe</p>
+                <button onclick="openModal('Cama Deluxe', 'Descripción de la cama deluxe', 'https://www.petmoneysaver.co.uk/blog/wp-content/uploads/Vanilla-Cat-Bed1-300x228.jpg')">Comprar ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="juguete" class="section">
+        <h3>Juguetes</h3>
+        <div class="grid">
+            <div class="item">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71tcn9Ucu6L._AC_SL1500_.jpg" alt="Pato de peluche" class="image-hover">
+                <p>Pato de peluche</p>
+                <button onclick="openModal('Pato de peluche', 'Descripción del pato de peluche', 'https://images-na.ssl-images-amazon.com/images/I/71tcn9Ucu6L._AC_SL1500_.jpg')">Comprar ahora</button>
+            </div>
+            <div class="item">
+                <img src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/3920153d-c2e3-407c-a896-31a91c906631.6431506f43fe158c5ac958918fa7a3e6.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Cactus Juguete" class="image-hover">
+                <p>Cactus Juguete</p>
+                <button onclick="openModal('Cactus Juguete', 'Descripción del cactus juguete', 'https://i5.walmartimages.com.mx/mg/gm/3pp/asr/3920153d-c2e3-407c-a896-31a91c906631.6431506f43fe158c5ac958918fa7a3e6.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF')">Comprar ahora</button>
+            </div>
+            <div class="item">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71IdSpUXaZL._AC_SL1500_.jpg" alt="Cocoguete" class="image-hover">
+                <p>Cocoguete  </p>
+                <button onclick="openModal('Cocoguete', 'Descripción del cocoguete', 'https://images-na.ssl-images-amazon.com/images/I/71IdSpUXaZL._AC_SL1500_.jpg')">Comprar ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pet Boutique. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
